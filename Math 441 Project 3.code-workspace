@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../Math 441 Project 3"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"python-envs.defaultEnvManager": "ms-python.python:system",
+		"python-envs.defaultPackageManager": "ms-python.python:pip"
+	}
+}
