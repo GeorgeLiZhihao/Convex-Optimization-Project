@@ -36,26 +36,26 @@ $$
 
 Where:
 
-- \( \theta^* \): true initial temperature field  
-- \( K \): heat diffusion operator (Gaussian blur)  
-- \( \varepsilon \): noise  
+- $$\theta^*$$: true initial temperature field  
+- $$K$$: heat diffusion operator (Gaussian blur)  
+- $$\varepsilon$$: noise  
 
 ### Optimization Problems
 
 **1. Least Squares**
-\[
+$$
 \min_\theta \|K\theta - y\|_2^2
-\]
+$$
 
 **2. L2 Regularization**
-\[
+$$
 \min_\theta \|K\theta - y\|_2^2 + \lambda \|\theta\|_2^2
-\]
+$$
 
 **3. Total Variation (TV)**
-\[
+$$
 \min_\theta \|K\theta - y\|_2^2 + \lambda \, TV(\theta)
-\]
+$$
 
 TV promotes **piecewise-constant structures**, allowing recovery of sharp edges.
 
@@ -71,6 +71,7 @@ TV promotes **piecewise-constant structures**, allowing recovery of sharp edges.
 ├── 3d_direct_solve.py
 ├── 3d_l2solve.py
 ├── 3d_regularization.py
+
 
 
 ---
@@ -119,19 +120,3 @@ There is **no universal best method**:
 - L2 performs better for smooth signals  
 
 ---
-
-## 🚀 How to Run
-
-### Install dependencies
-
-```bash
-pip install numpy scipy matplotlib cvxpy
-python 2d_baseline.py
-python 2d_direct_solve.py
-python 2d_l2solve.py
-python 2d_regularization_solve.py
-python 3d_baseline.py
-python 3d_direct_solve.py
-python 3d_l2solve.py
-python 3d_regularization.py
-
