@@ -30,9 +30,9 @@ We compare three methods:
 
 We model the observation as:
 
-\[
+$$
 y = K\theta^* + \varepsilon
-\]
+$$
 
 Where:
 
